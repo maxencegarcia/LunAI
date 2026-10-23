@@ -1,3 +1,4 @@
 .vscode/*
 .vscode
 .idea
+src/__pycache__
