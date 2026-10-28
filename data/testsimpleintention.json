@@ -1,0 +1,56 @@
+{
+  "salutation": [
+    "salut à toi",
+    "coucou tout le monde",
+    "bienvenue",
+    "hey salut"
+  ],
+  "au_revoir": [
+    "je m'en vais",
+    "à la prochaine fois",
+    "je te laisse",
+    "on se revoit bientôt"
+  ],
+  "remerciement": [
+    "merci d'avance",
+    "c'est sympa de ta part",
+    "je t'en suis reconnaissant",
+    "merci pour le service"
+  ],
+  "affirmation": [
+    "oui, bien entendu",
+    "je suis partant",
+    "ça me va",
+    "je suis du même avis"
+  ],
+  "denegation": [
+    "je ne suis pas partant",
+    "je ne suis pas d'accord",
+    "je préfère éviter",
+    "je décline"
+  ],
+  "demande_aide": [
+    "j'ai besoin d'un coup de main",
+    "tu peux m'aider à coder ?",
+    "mon programme ne marche pas",
+    "je bloque sur un exercice"
+  ],
+  "incomprehension": [
+    "je suis confus",
+    "je ne saisis pas",
+    "tu m'as perdu",
+    "ça ne me parle pas"
+  ],
+  "question": [
+    "comment lancer un script Python ?",
+    "où est mon fichier ?",
+    "pourquoi cette fonction échoue ?",
+    "comment créer une liste en Java ?"
+  ],
+  "correction": [
+    "tu as fait une faute",
+    "ce résultat ne convient pas",
+    "il y a un souci ici",
+    "ta réponse comporte une erreur"
+  ]
+}

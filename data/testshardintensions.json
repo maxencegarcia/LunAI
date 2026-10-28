@@ -1,0 +1,56 @@
+{
+  "salutation": [
+    "content de te retrouver ici",
+    "c'est un plaisir de te croiser",
+    "bienvenue dans cette conversation",
+    "te voilà enfin parmi nous"
+  ],
+  "au_revoir": [
+    "je file vers d'autres aventures",
+    "je coupe la conversation pour le moment",
+    "on reprendra cette discussion une autre fois",
+    "je m'éclipse, le devoir m'appelle"
+  ],
+  "remerciement": [
+    "tu m'as bien dépanné",
+    "je te dois une fière chandelle",
+    "ton intervention m'a été précieuse",
+    "je suis reconnaissant pour ce service"
+  ],
+  "affirmation": [
+    "je valide cette proposition",
+    "cette option me convient parfaitement",
+    "tu peux considérer cela comme approuvé",
+    "c'est exactement ce que je retiens"
+  ],
+  "denegation": [
+    "je préfère décliner cette proposition",
+    "cette option ne me convient aucunement",
+    "je ne partage pas cette position",
+    "je passe mon tour sur ce coup"
+  ],
+  "demande_aide": [
+    "mon script produit un résultat inattendu, tu peux m'aider à trouver pourquoi ?",
+    "j'aimerais comprendre ce qui bloque dans mon algorithme",
+    "peux-tu m'accompagner dans le débogage de mon application ?",
+    "je cherche une piste pour résoudre un souci technique"
+  ],
+  "incomprehension": [
+    "ton raisonnement m'échappe complètement",
+    "je ne parviens pas à suivre cette logique",
+    "il me manque une étape pour comprendre",
+    "cette explication reste obscure pour moi"
+  ],
+  "question": [
+    "comment détecter les doublons dans une liste Python ?",
+    "quelle architecture conviendrait à un chatbot fonctionnant hors ligne ?",
+    "comment évaluer les performances d'un algorithme de recherche ?",
+    "quels critères permettent de choisir entre une base relationnelle et une base documentaire ?"
+  ],
+  "correction": [
+    "la logique appliquée ne correspond pas au comportement attendu",
+    "le résultat obtenu contredit les données de départ",
+    "une partie du raisonnement repose sur une hypothèse erronée",
+    "la solution proposée néglige un cas particulier important"
+  ]
+}
