@@ -19,7 +19,19 @@
     "bonjour, ça va ?",
     "comment allez-vous aujourd'hui ?",
     "salutations",
-    "heureux de te retrouver"
+    "heureux de te retrouver",
+    "Je vous adresse mes salutations et vous souhaite une excellente journée.",
+    "Je suis heureux de pouvoir reprendre notre conversation aujourd'hui.",
+    "Permettez-moi de vous souhaiter la bienvenue dans cet échange.",
+    "Je vous salue et espère que votre journée se déroule agréablement.",
+    "Je suis ravi de vous retrouver pour poursuivre notre discussion.",
+    "Bonjour à vous, j'espère que tout se passe bien de votre côté.",
+    "Je vous souhaite une agréable soirée avant que nous commencions.",
+    "C'est un plaisir de pouvoir échanger de nouveau avec vous.",
+    "Je viens vous saluer avant de vous soumettre quelques questions.",
+    "Recevez mes salutations les plus cordiales en ce début de conversation.",
+    "Je suis enchanté de pouvoir faire votre connaissance aujourd'hui.",
+    "Permettez-moi de vous saluer avant d'aborder le sujet qui m'intéresse."
   ],
   "au_revoir": [
     "bon, j'y vais",
@@ -41,7 +53,19 @@
     "passe un bon week-end",
     "bon courage pour la suite",
     "on se capte plus tard",
-    "tchao"
+    "tchao",
+    "Je vais devoir interrompre notre échange et vous souhaite une excellente continuation.",
+    "Je vous remercie pour cette conversation et vous souhaite une très bonne journée.",
+    "Je dois maintenant me consacrer à d'autres tâches et vous retrouverai ultérieurement.",
+    "Je vous laisse poursuivre vos activités et vous souhaite une agréable fin de journée.",
+    "Notre échange va prendre fin pour aujourd'hui, je vous souhaite une bonne continuation.",
+    "Je suis contraint de vous quitter pour le moment, mais nous pourrons reprendre plus tard.",
+    "Je vous souhaite une excellente soirée et vous remercie pour le temps accordé.",
+    "Je vais mettre fin à cette discussion et vous souhaite beaucoup de réussite pour la suite.",
+    "Je dois malheureusement partir maintenant, nous aurons peut-être l'occasion de discuter prochainement.",
+    "Je vous remercie de votre disponibilité et vous souhaite une fin de semaine agréable.",
+    "Je vais m'absenter pour un moment et vous souhaite une suite de journée satisfaisante.",
+    "Je vous prie de m'excuser, mais je dois désormais vous quitter."
   ],
   "remerciement": [
     "merci",
@@ -63,7 +87,19 @@
     "un gros merci",
     "avec tous mes remerciements",
     "top, merci",
-    "merci encore"
+    "merci encore",
+    "Je tiens à vous exprimer ma gratitude pour la qualité de votre explication.",
+    "Votre intervention m'a été particulièrement utile et je vous en remercie sincèrement.",
+    "Je vous suis reconnaissant d'avoir pris le temps de répondre à mes interrogations.",
+    "Je souhaite vous remercier pour la précision des informations que vous m'avez fournies.",
+    "Je vous adresse mes remerciements pour votre accompagnement tout au long de cette démarche.",
+    "Votre aide m'a permis de mieux comprendre le sujet, ce dont je vous remercie.",
+    "Je tiens à souligner l'utilité de votre réponse et à vous en remercier.",
+    "Je vous remercie pour votre patience et pour les éclaircissements apportés.",
+    "Je vous suis très reconnaissant d'avoir pris en considération ma demande.",
+    "Je tiens à vous faire part de ma reconnaissance pour cette assistance précieuse.",
+    "Je vous remercie vivement pour les efforts consacrés à résoudre cette difficulté.",
+    "Veuillez recevoir mes sincères remerciements pour votre contribution."
   ],
   "affirmation": [
     "oui",
@@ -85,7 +121,19 @@
     "ça marche",
     "ok pour moi",
     "entendu",
-    "je confirme"
+    "je confirme",
+    "Je confirme que cette proposition correspond parfaitement à ce que je recherche.",
+    "Après réflexion, je considère que cette solution est tout à fait appropriée.",
+    "Je partage entièrement votre analyse et j'approuve la conclusion présentée.",
+    "Je vous confirme que les modalités proposées me conviennent parfaitement.",
+    "Cette approche me semble pertinente et je suis disposé à la retenir.",
+    "Je valide cette proposition, qui répond aux critères que nous avons définis.",
+    "Je suis favorable à cette orientation et souhaite que nous la poursuivions.",
+    "Je peux vous assurer que je suis en accord avec cette interprétation.",
+    "Je considère cette option comme acceptable et confirme mon accord à son sujet.",
+    "Votre suggestion me paraît cohérente avec les objectifs que nous souhaitons atteindre.",
+    "Je donne mon accord pour que cette solution soit mise en application.",
+    "Je confirme mon adhésion à cette démarche et aux principes qui la sous-tendent."
   ],
   "denegation": [
     "non",
@@ -107,7 +155,19 @@
     "négatif",
     "ce n'est pas ce que je veux",
     "sans moi",
-    "je refuse"
+    "je refuse",
+    "Après avoir examiné votre proposition, je ne souhaite pas donner suite à celle-ci.",
+    "Je ne peux malheureusement pas approuver cette décision dans les circonstances actuelles.",
+    "Je considère que cette approche ne correspond pas aux objectifs que nous poursuivons.",
+    "Je préfère ne pas retenir cette solution, car elle ne répond pas à mes attentes.",
+    "Je ne partage pas cette interprétation et ne peux donc pas la valider.",
+    "Je ne suis pas disposé à accepter les conditions qui viennent d'être présentées.",
+    "Cette orientation ne me paraît pas appropriée et je souhaite l'écarter.",
+    "Je dois exprimer mon désaccord avec la conclusion proposée dans votre réponse.",
+    "Je ne souhaite pas poursuivre dans cette direction compte tenu des éléments disponibles.",
+    "Je ne peux donner mon consentement à cette démarche en l'état actuel des choses.",
+    "Je ne considère pas cette option comme satisfaisante au regard des contraintes définies.",
+    "Je préfère décliner cette proposition plutôt que de m'engager dans une solution inadaptée."
   ],
   "demande_aide": [
     "peux-tu m'aider ?",
@@ -129,7 +189,19 @@
     "peux-tu débloquer cette situation ?",
     "peux-tu me guider pour installer le programme ?",
     "peux-tu m'aider à corriger mon code Python ?",
-    "j'ai besoin d'aide pour configurer le chatbot"
+    "j'ai besoin d'aide pour configurer le chatbot",
+    "Pourriez-vous m'accompagner dans la résolution du problème que je rencontre actuellement ?",
+    "Je souhaiterais obtenir des indications précises afin de terminer correctement mon programme.",
+    "Serait-il possible de m'expliquer les différentes étapes nécessaires pour corriger cette anomalie ?",
+    "J'aurais besoin de votre assistance pour identifier l'origine de cette erreur informatique.",
+    "Pourriez-vous examiner cette situation et m'indiquer une méthode adaptée pour avancer ?",
+    "Je rencontre plusieurs difficultés dans mon projet et souhaiterais bénéficier de vos conseils.",
+    "Pourriez-vous me guider dans la configuration des différents composants de mon application ?",
+    "Je sollicite votre aide afin de comprendre pourquoi le résultat obtenu diffère de celui attendu.",
+    "Serait-il possible de me proposer une démarche progressive pour résoudre cette difficulté technique ?",
+    "J'aimerais que vous m'aidiez à organiser mon code afin de le rendre plus compréhensible et fiable.",
+    "Je souhaiterais être accompagné dans la mise en place d'un système de classification de texte.",
+    "Pourriez-vous me fournir des explications complémentaires afin que je puisse poursuivre mon travail ?"
   ],
   "incomprehension": [
     "je ne comprends pas",
@@ -151,7 +223,19 @@
     "je ne vois pas où tu veux en venir",
     "je pige rien",
     "c'est flou",
-    "je ne comprends pas le sens de cette phrase"
+    "je ne comprends pas le sens de cette phrase",
+    "Je ne parviens pas à comprendre la logique qui justifie la conclusion de votre explication.",
+    "Les éléments que vous venez de présenter restent trop obscurs pour que je puisse les interpréter.",
+    "Je rencontre des difficultés à établir un lien entre les différentes étapes que vous décrivez.",
+    "Votre explication ne me permet pas encore de déterminer précisément le fonctionnement de ce mécanisme.",
+    "Je ne réussis pas à comprendre la raison pour laquelle cette méthode devrait fonctionner.",
+    "Certains passages de votre réponse me semblent ambigus et nécessiteraient davantage de précisions.",
+    "Je ne suis pas certain d'avoir correctement interprété le raisonnement que vous venez de développer.",
+    "La relation entre les concepts présentés ne m'apparaît pas clairement à ce stade.",
+    "Je ne comprends pas suffisamment les explications fournies pour pouvoir les appliquer à mon projet.",
+    "Pour le moment, je ne parviens pas à donner un sens précis aux informations que vous avez présentées.",
+    "Le principe que vous exposez demeure difficile à interpréter malgré les explications précédentes.",
+    "Je ne saisis pas la signification exacte de la démarche que vous proposez."
   ],
   "question": [
     "pourquoi le programme plante-t-il ?",
@@ -193,7 +277,19 @@
     "comment le chatbot peut-il retrouver une information dans un fichier PDF ?",
     "quelle est la différence entre une base de connaissances et un modèle entraîné ?",
     "pourquoi utiliser SQLite pour stocker les connaissances ?",
-    "comment enregistrer les nouvelles phrases d'entraînement ?"
+    "comment enregistrer les nouvelles phrases d'entraînement ?",
+    "Pourriez-vous préciser les critères utilisés pour déterminer la catégorie associée à un message ?",
+    "Quelles précautions faut-il prendre pour éviter que le modèle mémorise simplement les exemples fournis ?",
+    "Dans quelles circonstances serait-il préférable d'utiliser un autre algorithme de classification ?",
+    "Quels indicateurs permettent d'évaluer la capacité du système à généraliser sur des phrases inédites ?",
+    "De quelle manière peut-on analyser les prédictions incorrectes produites par le classificateur ?",
+    "Quels éléments devraient être pris en compte lors de la conception d'une nouvelle intention ?",
+    "Serait-il pertinent de normaliser les textes avant de les transmettre au vectoriseur TF-IDF ?",
+    "Comment déterminer si le nombre d'exemples disponibles est suffisant pour chaque catégorie ?",
+    "Quels sont les avantages d'une représentation fondée sur les séquences de caractères ?",
+    "Comment comparer objectivement plusieurs configurations du même modèle de classification ?",
+    "Quelles conséquences peut avoir un déséquilibre important entre les catégories du jeu de données ?",
+    "Est-il possible d'identifier les mots ou fragments de texte qui influencent le plus une prédiction ?"
   ],
   "correction": [
     "non, ce n'est pas ça",
@@ -215,6 +311,18 @@
     "non, regarde bien ce que j'ai écrit",
     "c'est inexact",
     "tu confonds deux notions différentes",
-    "mauvaise réponse"
+    "mauvaise réponse",
+    "Je pense que votre dernière explication repose sur une interprétation qui ne correspond pas aux faits.",
+    "Le résultat présenté ne respecte pas les conditions que j'avais indiquées dans ma demande initiale.",
+    "Il me semble nécessaire de revoir cette conclusion, car elle comporte une incohérence importante.",
+    "La méthode proposée ne répond pas au problème précis que je souhaitais résoudre.",
+    "Je souhaite signaler que cette affirmation ne correspond pas au comportement observé dans mon programme.",
+    "Votre réponse semble confondre deux étapes distinctes du processus de traitement des données.",
+    "Cette conclusion doit être rectifiée, car elle ne tient pas compte d'un élément essentiel du problème.",
+    "Je crois qu'une partie de votre raisonnement repose sur une hypothèse qui n'est pas vérifiée.",
+    "L'interprétation que vous proposez ne correspond pas aux informations que j'ai communiquées précédemment.",
+    "Il faudrait revoir cette partie de la réponse, car elle conduit à un résultat inadapté.",
+    "La solution présentée contient une incohérence par rapport aux contraintes définies au départ.",
+    "Je souhaite apporter une rectification, car le fonctionnement décrit ne correspond pas à celui attendu."
   ]
 }
