@@ -1,0 +1,65 @@
+{
+  "salutation": [
+    "Salut, comment ça va ?",
+    "Bonjour, tu es disponible ?",
+    "Coucou, me revoilà !",
+    "Bonsoir à toi.",
+    "Hé, on peut discuter ?"
+  ],
+  "au_revoir": [
+    "Je file, à la prochaine.",
+    "On se reparle une autre fois, salut !",
+    "Je dois y aller maintenant.",
+    "Bonne soirée, je te laisse.",
+    "C'est tout pour moi, à bientôt."
+  ],
+  "remerciement": [
+    "Merci pour le coup de main.",
+    "Je t'en suis reconnaissant.",
+    "C'est gentil de ta part, merci.",
+    "Merci, ça m'a vraiment servi.",
+    "Un grand merci pour tes explications."
+  ],
+  "affirmation": [
+    "Oui, c'est exactement ça.",
+    "D'accord, je valide.",
+    "Tout à fait, tu as raison.",
+    "Ça marche pour moi.",
+    "Je confirme ce choix."
+  ],
+  "denegation": [
+    "Non, je préfère éviter.",
+    "Pas du tout.",
+    "Je ne suis pas d'accord.",
+    "Certainement pas.",
+    "Non merci, ce n'est pas nécessaire."
+  ],
+  "demande_aide": [
+    "Aide-moi à corriger cette fonction Python.",
+    "Comment je peux organiser les fichiers de mon projet ?",
+    "J'ai une erreur SQL, peux-tu m'aider à la résoudre ?",
+    "Guide-moi pour configurer mon environnement de développement.",
+    "Je bloque sur mon programme, comment avancer ?"
+  ],
+  "incomprehension": [
+    "Je n'arrive pas à suivre ton raisonnement.",
+    "Tu peux reformuler plus simplement ?",
+    "Je ne saisis pas cette explication.",
+    "Je suis perdu dans ce que tu viens de dire.",
+    "Tu peux éclaircir ce dernier point ?"
+  ],
+  "question": [
+    "Quelle est la différence entre une liste et un tuple en Python ?",
+    "Pourquoi le ciel paraît-il bleu ?",
+    "À quoi sert le protocole DNS ?",
+    "Combien de temps met la lumière du Soleil pour atteindre la Terre ?",
+    "Qui a inventé le langage Java ?"
+  ],
+  "correction": [
+    "Tu as confondu les deux variables.",
+    "Ce n'est pas ce que j'avais demandé.",
+    "Petite rectification : le fichier s'appelle config.json.",
+    "Tu as mal interprété mon message.",
+    "La réponse précédente contient une erreur."
+  ]
+}

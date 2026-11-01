@@ -1,0 +1,62 @@
+{
+  "salutation": [
+    "Salut, ça faisait longtemps !",
+    "Bien le bonjour à toi.",
+    "Content de pouvoir discuter avec toi aujourd'hui.",
+    "Coucou, je viens faire un petit tour.",
+    "Je vous souhaite la bienvenue et espère que tout va bien."
+  ],
+  "au_revoir": [
+    "Je file, à la prochaine !",
+    "On se reparle une autre fois.",
+    "Je vais devoir mettre un terme à notre échange pour aujourd'hui.",
+    "Allez, je te laisse tranquille.",
+    "Je vous souhaite une bonne continuation et vous dis à une prochaine occasion."
+  ],
+  "remerciement": [
+    "Merci, c'est super utile !",
+    "Tu assures, merci beaucoup.",
+    "Je vous remercie pour toutes ces précisions, elles m'ont été très utiles.",
+    "Je tiens à vous remercier pour le temps consacré à ma demande."
+  ],
+  "affirmation": [
+    "Je suis entièrement d'accord avec cette idée.",
+    "Ça me convient parfaitement.",
+    "Ouais, pourquoi pas !",
+    "Je confirme que cette proposition répond bien à mes attentes."
+  ],
+  "denegation": [
+    "Non, vraiment pas.",
+    "Je préfère ne pas accepter cette proposition.",
+    "Ça ne m'intéresse pas du tout.",
+    "Je ne suis absolument pas convaincu par cette approche.",
+    "Je vais devoir refuser cette possibilité pour le moment."
+  ],
+  "demande_aide": [
+    "Tu pourrais me filer un coup de main ?",
+    "Je galère avec mon programme.",
+    "J'aimerais que tu m'aides à comprendre pourquoi mon application ne fonctionne pas correctement.",
+    "Tu peux m'expliquer comment faire ?",
+    "Je souhaiterais obtenir quelques conseils pour résoudre mon problème technique."
+  ],
+  "incomprehension": [
+    "Je suis complètement largué.",
+    "Ça veut dire quoi exactement ?",
+    "Je n'arrive pas à suivre le raisonnement présenté dans cette explication.",
+    "Je ne parviens toujours pas à comprendre le fonctionnement de cette méthode."
+  ],
+  "question": [
+    "Tu connais cette bibliothèque Python ?",
+    "Pourquoi cette commande ne fonctionne-t-elle pas sur mon système ?",
+    "Est-ce que plusieurs modèles peuvent être utilisés simultanément ?",
+    "Combien de temps prend généralement l'entraînement d'un classificateur ?",
+    "Quelle méthode permettrait de comparer les performances de deux configurations différentes ?"
+  ],
+  "correction": [
+    "Attends, tu fais erreur.",
+    "Ce n'est pas vraiment ce que j'avais demandé.",
+    "La conclusion que tu viens de présenter ne correspond pas aux résultats obtenus.",
+    "Non, tu as inversé les deux notions.",
+    "Il faudrait revoir cette réponse, car elle contient une information qui ne correspond pas à mon problème."
+  ]
+}
