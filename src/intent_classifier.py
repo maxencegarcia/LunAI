@@ -5,7 +5,6 @@ from sklearn.model_selection import cross_val_predict
 from sklearn.model_selection import StratifiedKFold
 from dataloader import chargerexemple
 from pathlib import Path
-import random
 import joblib
 
 
