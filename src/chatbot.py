@@ -1,6 +1,13 @@
+from intent_classifier import IntentClassifier
+
+
+
 class Chatbot :
     def __init__(self):
-        pass
+        self.clf = IntentClassifier()
+        self.clf.load("Lunav1")
 
     def repondre(self, message) -> str :
-        return message
+        intention,confiance = self.clf.predire(message)
+        return intention, confiance
+

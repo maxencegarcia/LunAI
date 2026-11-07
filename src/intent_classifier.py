@@ -4,45 +4,54 @@ from sklearn.pipeline import Pipeline
 from sklearn.model_selection import cross_val_predict
 from sklearn.model_selection import StratifiedKFold
 from dataloader import chargerexemple
-textes, etiquettes = chargerexemple()
-textes_test, etiquettes_test = chargerexemple("mixintention")
+from pathlib import Path
+import random
+import joblib
 
 
-seuilmax = 0.20 # extrait des tests precedant pas complemtement random comme proba 
+class IntentClassifier :
+    def __init__(self, seuil=0.40): # ex 0.20
+        self.seuil = seuil
+        self.pipe = Pipeline([
+        ("vecteuri", TfidfVectorizer(analyzer="char_wb", ngram_range=(2,5))),
+        ("classi", LogisticRegression(C=10, class_weight="balanced", max_iter=1000))
+        ])
+        self.entrainer = False
 
-pipe = Pipeline([
-    ("vecteuri", TfidfVectorizer(analyzer="char_wb", ngram_range=(2,5))),
-    ("classi", LogisticRegression(C=10, class_weight="balanced", max_iter=1000))
-    ])
 
-pipe.fit(textes, etiquettes)
-print(pipe.predict(["salut"]))
-print(pipe.predict_proba(["proba"])) # cette ligne c'est de la merde mais volontaire pour savoir ce que le bot predit quand il ne peux pas predire 
 
-reussite = 0
-foirer = 0
-print("resultat de devine : \n")
-for texte, attendu in zip(textes_test, etiquettes_test):
-    devine = pipe.predict([texte])[0]
-    if pipe.predict_proba([texte]).max() < seuilmax :
-        print("\n\nje ne comprend pas : ", texte, devine, attendu)
-    else :
-        print(devine, pipe.predict_proba([texte]), pipe.classes_, "attendu : ", attendu)
-    if devine == attendu : 
-        reussite+=1
-    if devine!= attendu : 
-        foirer+=1
+    def train(self, textes, etiquettes) :
+    #    textes, etiquettes = chargerexemple()
+        self.pipe.fit(textes, etiquettes)
+        self.entrainer = True
+        
 
-print("reussite et compagnie : ")
-print("reussite : \n", reussite, "\n foirer : \n", foirer)
-print(len(textes_test)) 
-print((reussite / len(textes_test) * 100))
+    def predire(self, texte):
+        if not self.entrainer :
+            raise RuntimeError("le modele n'est pas entrainer ou alors il y a rien de charger jsp demerder vous vous mais il faut faire un des 2 ou les 2 Zut ! ")
+        proba = self.pipe.predict_proba([texte])[0]
+        i = proba.argmax()
+        confiance = float(proba[i]) # sinon on vas galerer a conparer au seuil
+        #seuilactu = self.pipe.predict_proba([texte]).max()
+        #predictions = self.pipe.classes_[seuilactu.argmax(axis=1)]
+        if confiance < self.seuil :
+            return "inconnue", confiance
+        return str(self.pipe.classes_[i]), confiance
 
-proba = cross_val_predict(pipe, textes, etiquettes, cv=StratifiedKFold(n_splits=5, shuffle=True, random_state=0), method="predict_proba")
-predictions = pipe.classes_[proba.argmax(axis=1)]
-confiances = proba.max(axis=1)
+    def save(self, nom) : 
+        directory_src = Path(__file__).resolve().parent.parent
+        nom+=".joblib"
+        cheminmodelLuna = directory_src / "models" / nom
+        joblib.dump(self.pipe, cheminmodelLuna )
 
-for attendu, devine, confiance in zip(etiquettes, predictions, confiances):
-    print("attendu : ", attendu, "devine : ", devine, "confiance : ", confiance)
+    def load(self, nom) : 
+        directory_src = Path(__file__).resolve().parent.parent
+        nom+=".joblib"
+        cheminmodelLuna = directory_src / "models" / nom
+        self.pipe = joblib.load(cheminmodelLuna)
+        self.entrainer = True
 
-print(proba)
+
+
+
+
