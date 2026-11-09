@@ -1,5 +1,8 @@
 import sqlite3
 import hashlib
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 from pathlib import Path
 from contextlib import contextmanager
 
@@ -56,9 +59,25 @@ class Knowledge :
                 )
             """)
 
-    def decouper_document(self, contenu):    
-            passages = contenu.split("\n\n")
-            return [passage.strip() for passage in passages if passage.strip()]
+
+    def decouper_document(self, contenu):
+        passages = []
+        passage_actuel = []
+
+        for ligne in contenu.splitlines():
+            ligne = ligne.strip()
+            if not ligne:
+                continue
+
+            if ligne.startswith("#"):
+                if passage_actuel:
+                    passages.append("\n".join(passage_actuel))
+                passage_actuel = [ligne]
+            else:
+                passage_actuel.append(ligne)
+            if passage_actuel:
+                passages.append("\n".join(passage_actuel))
+            return passages
 
     def calculer_empreinte(self, contenu):
         """Calcule une empreinte pour détecter les modifications."""
@@ -186,3 +205,52 @@ class Knowledge :
             """, (f"%{mot_cle}%",))
 
             return curseur.fetchall()
+
+    def retourntoutpassage(self):
+        with self.connexion() as conn:
+
+            curseur = conn.execute("""
+                SELECT documents.nom, passages.numero, passages.texte
+                FROM passages
+                JOIN documents
+                    ON documents.id = passages.document_id
+                ORDER BY documents.nom, passages.numero
+            """)
+
+            return curseur.fetchall()
+
+    def chercher(self, question, k=3, seuil=0) :
+        with self.connexion() as conn:
+            curseur = conn.execute("""
+                SELECT documents.nom, passages.numero, passages.texte
+                FROM passages
+                JOIN documents
+                    ON documents.id = passages.document_id
+            """)
+            passages = curseur.fetchall()
+        if not passages :
+            return []
+        # maths trop complexe pour moi dsl
+        textes = [passage[2] for passage in passages]
+        vectoriseur = TfidfVectorizer(strip_accents="unicode", sublinear_tf=True, analyzer="char_wb", ngram_range=(2, 5))
+        matrice = vectoriseur.fit_transform(textes)
+        vecteur_question = vectoriseur.transform([question])
+        scores = cosine_similarity(
+            vecteur_question,
+            matrice
+        )[0]
+
+        meilleurs_indices = [
+            indice
+            for indice in np.argsort(scores)[::-1]
+            if scores[indice] >= seuil
+        ][:k]
+        #meilleurs_indices = np.argsort(scores)[::-1][:k]
+        resultats = []
+        for indice in meilleurs_indices:
+            score = float(scores[indice])
+            nom, numero, texte = passages[indice]
+            resultats.append(
+                (score, nom, numero, texte)
+            )
+        return resultats

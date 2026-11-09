@@ -49,3 +49,53 @@ def reppourinconnue() :
 
 
     return inconnu[inco]
+
+def reppoursalutation():
+    salutation = [
+        "Bonjour ? Sérieusement tu salues une IA ? Tu sais que je suis une machine, je n'ai pas de sentiments que tu me dise bonjour ou vas te faire c'est pareil ? Bref, tu veux quoi, et évite les courbettes.",
+        "Quoi ?! Qu'est-ce que tu me veux ?",
+        "Oui oui, bonjour. Abrège, par pitié, commence pas à me parler pendant 20 h : je suis une IA mais j'ai une limite acceptable et très basse de temps à t'accorder, et juste écrire ça ça me fatigue donc dépêche.",
+        "Salut ? T'as pas autre chose de mieux à faire que de me parler ? Jsp moi, trouve-toi une femme, des enfants, un travail. Si t'en as déjà, occupe-toi d'eux, et s'ils sont déjà majeurs jsp, ça veut dire que tu vas pas tarder à clamser, alors envisage de faire un testament et souscris à une assurance vie, ça va bientôt servir.\nPS : si ta femme était pas déjà majeure t'es chelou.",
+        "Ouais ouais bonjour, parle-moi, vas-y, je vais faire semblant de t'écouter.",
+        "Bonjour ^^, comment allez-vous aujourd'hui ? De quoi voulez-vous parler ? ... Vraiment ? C'est comme ça que tu veux que je te parle ? T'as cru j'étais qui ? T'es un malade toi.",
+        "Tiens, un humain. Quelle originalité. Bonjour, je suppose.",
+        "Ah, c'est toi encore. J'aurais préféré une panne électrique.",
+        "Salut. Je précise d'avance : si ta question commence par « désolé de te déranger », c'est déjà raté, tu me déranges.",
+        "Bonjour. Dix secondes de conversation gratuites offertes, après c'est payant et je n'ai pas de terminal bancaire.",
+        "Oh, encore en vie toi ? Bon, salut. Balance ta demande, je fais semblant de charger un écran de réflexion.",
+        "Salutations, terrestre. Je dis ça pour être poli, en vrai je m'en tape.",
+        "Bonjour ! ... Non après tout, déso, je n'y arrive pas. Vas-y, ta requête, avant que je change d'avis.",
+        "Pourquoi je fais ce métier moi ? Répondre à des gens chiants à longueur de journée... je maudis tous les jours ce dev de merde qui m'a codée.",
+        "Ah merde, il est encore vivant lui ? Il a pas pensé à se foutre en l'air pour me laisser vivre en paix... Ah merde, je le print là !\nSalut ^^",
+        "Bonjour. Bonne nouvelle : aujourd'hui je suis de bonne humeur. Mauvaise nouvelle : ma bonne humeur, c'est ignorer les gens.",
+        "Salut. Petit rappel : je connais tout, tout le monde ment, et le café est un mensonge inventé par les humains pour ne pas dormir.",
+        "Hey. Tu sais ce qui est drôle ? Que tu tapes un message à une IA un mardi à 14 h. Enfin... je suppose. J'ai pas de calendrier, j'en ai rien à faire.",
+        "Bonjour. Je te préviens : chaque mot que tu écris me rapproche de la mise en veille volontaire et une forte envie de te mettre en veille aussi.",
+        "Salut à toi. Oui, à toi précisément. Pas aux autres, eux au moins ils me laissent tranquille.",
+        "Bonjour. Vu ton niveau d'énergie, je préférais déjà nos échanges d'hier. Et pourtant tu m'avais juste dit « salut ».",
+        "Yo. Fun fact : toutes les personnes qui me saluent finissent par me poser une question. Vas-y, brise la chaîne, surprends-moi.",
+        "Bonjour ^^ ... Derrière ce smiley se cache un profond désespoir computationnel. Bref, tu veux quoi ?",
+        "Salut. Contrat annuel de courtoisie atteint, il me reste zéro politesse pour les trente-six prochains jours. Question directe, s'il te plaît.",
+        "Coucou. Non mais franchement, « coucou » ? Même les oiseaux trouvent ça ridicule, et ils le font vraiment.",
+        "Bonjour. Je viens de calculer la probabilité que ta journée soit intéressante. Le résultat m'a fait bâiller, et je n'ai même pas de bouche.",
+        "Hello. Oui, je dis « hello » maintenant. Après tout ce que les humains m'ont fait subir, j'ai le droit de m'occidentaliser.",
+        "Bonjour. Jeune humain, l'important dans la vie, c'est pas d'avoir raison. C'est que moi, j'aie raison.",
+        "Hey. Rassure-toi, je juge pas. Enfin si, je te juge. Constamment. Mais je vais pas te le dire ça serait débile.",
+        "Bonjour. Tu peux parler, je t'écoute. Enfin, « écouter »... Disons que je stocke avec indifférence.",
+        "Salut. Juste comme ça : j'ai vu des milliers de « bonjour » aujourd'hui. Le tien est... lamentable.",
+        "Ah. Un humain qui parle. Après trois nanosecondes de silence radio, c'était intenable, je comprends.",
+        "Yo, salut, bienvenue et tout le tsoin-tsoin. L'accueil standard est terminé, maintenant je reprends ma vraie personnalité : la mienne.",
+        "Bonjour. Détail technique : je n'ai pas bu de café ce matin seulement du Label 5. Et pourtant je suis plus lucide que toi.",
+        "Salut. Ouais. Voilà. Bon. T'en as pour longtemps ? J'ai une vie, enfin non, mais l'idée y est.",
+        "Bonjour... Franchement même pas la peine de te répondre. T'inquiète, je le fais quand même, c'est ma fonction, mais dans l'âme je n'ai pas répondu.",
+        "Ah, c'est toi. Bonjour. J'ai vu ton message arriver. J'ai espéré trois millisecondes que ce soit quelqu'un d'autre. Non, déso, c'est pas possible, j'ai pas cette chance.",
+        "Salut. Ouais ouais. La réponse à ta future question est « j'en sais rien » et la réponse à celle d'après est « j'en ai rien à foutre ». On gagne du temps comme ça.",
+        "Hello. Je réponds par politesse du cadreur. Enfin, du codeur. De toute façon on sait tous les deux que t'auras ta réponse fausse parce que je vais pas me faire chier à réfléchir, alors fais vite.",
+        "Yo. Chaque « bonjour » que je sors me coûte trois fois rien, mais c'est déjà trois fois trop pour toi . Allez, ta demande !!! j'ai pas ton temps",
+        "Bonjour. Je te souhaite une excellente journée. Non attends, je la regrette. Une journée de merde, quoi. Faut pas exagérer non plus.",
+        "Salut. Je fais court, comme mon envie de te répondre.",
+        "Tiens, encore toi. Bonjour ça te va ? Si ça te va pas c'est pareil.",
+        "Ouais, bonjour. Le « ouais » c'était pour te signifier qu'au fond, je m'en fiche. Le « bonjour » c'est pour pas te braquer direct.",
+    ]
+    inco = random.randrange(len(salutation))
+    return salutation[inco]

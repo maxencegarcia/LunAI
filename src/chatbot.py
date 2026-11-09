@@ -1,5 +1,6 @@
 from intent_classifier import IntentClassifier
 from personality import reppourinconnue
+from personality import reppoursalutation
 
 
 
@@ -12,5 +13,7 @@ class Chatbot :
         intention,confiance = self.clf.predire(message)
         if intention == "inconnue" :
             return reppourinconnue()
+        if intention == "salutation" :
+            return reppoursalutation()
         return intention, confiance
 
