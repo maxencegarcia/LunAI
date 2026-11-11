@@ -23,7 +23,16 @@ class IntentClassifier :
     #    textes, etiquettes = chargerexemple()
         self.pipe.fit(textes, etiquettes)
         self.entrainer = True
-        
+#avant c'est train donc la c'est tgv je suis marrant hein ?
+# au moi du futur c'est pour rentrainé avec une correction
+    def tgv(self, textecorrigé, etiquettecorrigé) :
+        textes, etiquettes = chargerexemple()
+        for i in range(0, len(textecorrigé))  :
+            textes.append(textecorrigé[i])
+            etiquettes.append(etiquettecorrigé[i])
+        self.pipe.fit(textes, etiquettes)
+        self.entrainer = True
+
 
     def predire(self, texte):
         if not self.entrainer :
