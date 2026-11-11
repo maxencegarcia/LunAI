@@ -265,6 +265,6 @@ class Knowledge :
                 (score, nom, numero, texte)
             )
         if(seuil!= 0) :
-            if(resultats[0][0] < seuil) :
+            if not resultats :
                 return "inconnue"
         return resultats[0][3]

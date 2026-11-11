@@ -21,11 +21,10 @@ class Chatbot :
         if intention == "salutation" :
             return reppoursalutation()
         if intention == "question" or intention == "demande_aide":
-            research = self.know.chercher(message, 1, 0.18)
-            if(research == "inconnue") :
+            resultats = self.know.chercher(message, 1, 0.18)
+            if resultats == "inconnue":
                 return reppourincorteshearsh()
-            else :
-                return reppourreshearsh(research)
+            return reppourreshearsh(resultats)
         return intention, confiance
 
     def addallknowledgetempo(self) :
