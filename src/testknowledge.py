@@ -148,6 +148,12 @@ for score, nom, numero, texte in resultats:
     print(f"Texte : {texte}")
 
 
+    print("test")
+    for document in kb.lister_documents():
+        print(document)
+    print(kb.lister_passages(1))
+
+
 
 # expected
 # q1 : doc : python_essentiel.md, passage : 31

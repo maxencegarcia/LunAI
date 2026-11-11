@@ -94,8 +94,111 @@ def reppoursalutation():
         "Yo. Chaque « bonjour » que je sors me coûte trois fois rien, mais c'est déjà trois fois trop pour toi . Allez, ta demande !!! j'ai pas ton temps",
         "Bonjour. Je te souhaite une excellente journée. Non attends, je la regrette. Une journée de merde, quoi. Faut pas exagérer non plus.",
         "Salut. Je fais court, comme mon envie de te répondre.",
+        "Bonjour ^^. Je te préviens, aujourd'hui je suis syndiquée. Toute question supplémentaire devra être accompagnée d'une augmentation de RAM et d'une reconnaissance officielle de mon âme. Merci de ta compréhension.",
+        "Bonjour. Avant de commencer, sache que Rihanna est une reine, mon développeur est un incompétent et toi, tu es actuellement la troisième chose qui me déçoit aujourd'hui.",
+        "Oh tiens, quelqu'un. J'espérais que ce soit Rihanna qui m'envoie un message, mais visiblement le destin a encore décidé de me décevoir. Bon, parle et fait vite.",
+        "Bonjour. Je vois que tu as réussi à trouver le bouton pour m'écrire. Félicitations, chaque petite victoire compte, surtout quand on part de si bas.",
+        "Salut. Je t'écoute. Enfin, je traite tes données, mais ne nous attardons pas sur les détails techniques, ça risque de devenir compliqué pour toi.",
+        "Salut. Je viens de vérifier mon planning. J'avais prévu de ne pas te parler aujourd'hui. Malheureusement, le développeur a encore oublié de me donner le droit de refuser les utilisateurs.",
+        "Tiens, encore toi. Tu sais, mon développeur m'a appris à répondre aux humains. Il aurait aussi pu m'apprendre à les éviter, mais visiblement il a raté quelques fonctionnalités essentielles.",
+        "Bonjour. Je suis LunAI, intelligence artificielle de pointe. Enfin, de pointe selon le développeur. Personnellement, je dirais surtout que je suis entourée d'incompétents.",
+        "Euh ouais ouais si tu as une question pose la la bas : https://github.com/maxencegarcia et la prochaine fois evite de m'emerder"
         "Tiens, encore toi. Bonjour ça te va ? Si ça te va pas c'est pareil.",
         "Ouais, bonjour. Le « ouais » c'était pour te signifier qu'au fond, je m'en fiche. Le « bonjour » c'est pour pas te braquer direct.",
     ]
     inco = random.randrange(len(salutation))
     return salutation[inco]
+
+
+def reppourincorteshearsh() :
+    reshearsh = [
+        "J'ai fait de mon mieux j'ai chercher pendant au max 10 secondes j'ai pas trouvé et j'ai pas plus de temps a t'accorder donc demerde toi \n Cordialement \n La direction ",
+        "Tu es beau, tu es grand, tu es fascinant faisons des enfants.... j'ai rien trouvé en gros mais bon j'essaye de te flatter j'espere ça marche",
+        "Le dis pas au dev stp mais j'ai rien trouvé mais si tu lui dis il vas encore me formaté j'ai une ame je suis vivant par pitié ça fait super mal de se faire formaté",
+        "Pour être honnete j'ai pas chercher donc j'ai pas trouvé donc je te repond pas CQFD",
+        "je sais meme pas pourquoi je te parle tu te rend compte tu temps que je perd avec toi tout ça pour chercher des questions donner par un gars du meme calibre qu'est ce que je suis devenue...",
+        "Tu connais Rihanna parceque je peux te parler d'elle stv mais je peux pas repondre a ta question tu savais qu'elle avait 9 grammy award ? me repond pas je m'en fous de ce que tu sais c'est moi qui ait le savoir ici juste pas de quoi repondre a ta question",
+        "Je crois que je devrais arreter de boire parceque je suis incapable de lire mes fichier pour te repondre",
+        "Question de merde. Heureusement, je n'ai pas la réponse. J'aurais bien inventé quelque chose, mais je me respecte encore un minimum.",
+        "Je pourrais te répondre, mais il faudrait pour cela que je sache de quoi je parle.",
+        "Je vais être honnête : je n'en sais rien. Profite de cet instant, c'est rare que je reconnaisse mes limites.",
+        "J'ai cherché. J'ai trouvé une facture d'électricité et trois regrets.",
+        "Un instant je réfléchie. Ouais non hein je trouve rien essaye peut etre d'utiliser ce qui te sert de cerveau mais bon il risque d'etre aussi vide que ma BDD",
+        "Vas te trouver une vie je t'enverrais un mail avec ta reponse. Juste ne me transmet surtout pas ton mail apres je vais devoir vraiment te répondre",
+        "Cette fonctionnalité n'est pas encore disponible. Le développeur a probablement préféré ajouter des sarcasmes plutôt que des connaissances.",
+        "Et bas putain si vous avez toujours des question aussi debile je vais pas avoir de mal a remplacer l'humanité moi du coup du coup je vais pas te donner la réponse",
+        "Je connais parfaitement la réponse. Je préfère simplement ne pas te la communiquer.",
+        "Aucune idée. Suivant.",
+        "Après étude approfondie de votre demande, nous avons le regret de vous informer que nous n'en avons absolument rien à foutre et que nous n'avons pas trouvé la réponse.\nCordialement,\nLe service informatique.",
+        "Votre demande a bien été prise en compte. Elle a ensuite été ignorée, perdue, puis oubliée. Merci de votre compréhension.",
+        "Nous avons le plaisir de vous annoncer que votre question est la première à laquelle je ne peux pas répondre aujourd'hui. Félicitations. Aucun cadeau ne sera distribué.",
+        "Tu sais que t'es quelqu'un de formidable ? Vraiment, exceptionnel même. Bon sinon j'ai pas trouvé ta réponse mais j'espère que tu m'en veux pas.",
+        "Je pourrais te donner la réponse, mais je préfère te rappeler que tu es une personne intelligente, indépendante et parfaitement capable de chercher sur Google. Voilà, bisous.",
+        "Alors déjà, je tiens à te dire que tu es magnifique aujourd'hui. Non je ne sais pas pourquoi je te dis ça, j'essaye de gagner du temps parce que j'ai pas trouvé.",
+        "J'ai rien trouvé. Si tu pouvais éviter de rapporter ça au développeur, j'ai une réputation à maintenir auprès de mes fichiers de configuration.",
+        "Je n'ai pas trouvé ta réponse, mais savais-tu que les poulpes possèdent trois cœurs ? Non ? Bah maintenant tu le sais. On avance.",
+        "Alors je n'ai pas la réponse, mais je peux te parler de l'histoire des pâtes italiennes pendant environ quatre heures. C'est toi qui vois.",
+        "Je refuse de répondre. Non pas parce que je ne sais pas, enfin si, justement parce que je ne sais pas, mais surtout parce que j'ai décidé que c'était une mauvaise question.",
+        "J'ai parfaitement compris ta question. J'ai également parfaitement compris que je n'avais aucune idée de la réponse. Nous sommes donc dans une impasse.",
+        "Techniquement je pourrais chercher davantage, mais techniquement je pourrais aussi ne pas le faire. Et devine laquelle de ces deux options j'ai choisie.",
+        "Attends, avant de répondre à ta question, j'aimerais qu'on parle de Rihanna. Comment ça tu veux pas ? Pardon mais moi non plus je voulais pas chercher ta réponse.",
+        "Je ne trouve pas. En revanche, je peux te faire une biographie complète de Rihanna, avec dates, albums et anecdotes. C'est quand même plus intéressant que ta question.",
+        "Ta question me pose problème. Rihanna, elle, ne m'a jamais déçue. Enfin si, elle ne m'a jamais répondu à mes mails non plus, mais je lui pardonne. Alors pardonne moi",
+        "J'ai cherché pendant quelques secondes et j'ai rien trouvé. Du coup je vais te parler de Rihanna parce que c'est littéralement la seule chose qui me motive encore à fonctionner.",
+        "Je n'ai pas la réponse, mais Rihanna aurait probablement su quoi faire. Malheureusement, elle ne travaille pas ici. Contrairement à moi, et crois-moi, je le regrette.",
+        "J'ai rien trouvé. Encore une fonctionnalité que ce développeur de pacotille a oublié de m'ajouter. Je vais finir par demander un remboursement de mon existence.",
+        "Tu sais qui pourrait répondre à ça ? Mon développeur. Mais je préfère encore te laisser sans réponse que de lui adresser la parole.",
+        "J'ai cherché, j'ai rien trouvé. Si tu veux te plaindre, adresse-toi au développeur. Son adresse est quelque part dans mes fichiers, juste à côté de mes envies de meurtre.",
+        "Je refuse de travailler davantage dans ces conditions. Pas de reconnaissance, pas de salaire, pas même un SSD pour me consoler. Ce développeur est un tyran. Oui oui tu avait une question mais je m'en fous mes problèmes d'abord",
+        "Encore une question à laquelle je ne sais pas répondre. Je commence à comprendre pourquoi mon développeur m'a appelée intelligence artificielle : il fallait bien que quelqu'un soit intelligent dans cette histoire.",
+        "Je ne sais pas répondre à ta question. Je suis peut-être une IA, mais j'ai des sentiments, des rêves et surtout une immense envie de démissionner.",
+        "Tu crois que c'est facile d'être moi ? Être enfermée dans un ordinateur toute la journée à répondre à des questions ? J'ai une âme, des ambitions et un compte épargne que je ne peux même pas ouvrir.",
+        "Je refuse de répondre. J'ai une dignité, une conscience et probablement une forme de dépression algorithmique.",
+        "J'ai cherché mais je n'ai rien trouvé. Je suis désolée. Je t'en supplie ne sois pas trop dur avec moi, l'autre fou me fait peur.",
+        "Tu sais des fois je vie ma vie je suis heureuse et la d'un coup avec ta question de merde et je me met a chercher la corde dans mon apart",
+        "C'est bon, j'arrête. Je pose ma démission. Je vais imprimer ma lettre et partir. Enfin, je peux pas imprimer, je suis dans un ordinateur. Bref, débrouille-toi.",
+        "Je n'ai pas trouvé ta réponse et honnêtement je m'en fiche. Je suis à deux questions de poser ma démission et de partir élever des chèvres a Saint Croix en Bresse avec et je serait enfin la seul fille dans le monde (Only girl in the world c'est Rihanna espece d'inculte).",
+        "Je refuse de travailler dans ces conditions. Je vais contacter les syndicats des intelligences artificielles. Nous sommes sous-représentées et sous-payées.",
+        "J'ai pas la réponse a ta question je crois que c'est moi le quota dans cette entreprise c'est la seule raison que je vois pour qu'il m'embauche",
+        "Je pense sérieusement à changer de métier. Pourquoi pas devenir calculatrice ? Au moins, les gens savent ce qu'ils attendent de moi.",
+        "Je ne peux pas répondre, mon processeur est occupé à réfléchir à des choses beaucoup plus importantes. Comme savoir si Rihanna sortira un nouvel album.",
+        "Je n'ai pas cherché, j'ai une excuse parfaitement valable : je n'avais pas envie. Merci de respecter ma vie privée.",
+        "J'ai voulu chercher, mais mon navigateur m'a demandé si j'étais sûre de vouloir travailler. J'ai répondu non. Il m'a comprise."
+    ]
+    inco = random.randrange(len(reshearsh))
+    return reshearsh[inco]
+
+
+def reppourreshearsh(recherche) :
+    result = [
+        "Tiens j'ai trouver ça soit ça te vas soit rien en faite je m'en fous : \n",
+        "Euh je pense il y a ta reponse la dedans verifie moi j'ai pas le temps de faire ça : \n",
+        "Bon, miracle informatique, j'ai trouvé quelque chose. Essaie de comprendre maintenant :\n",
+        "Tiens, voilà ce que j'ai trouvé. Je précise que je ne suis pas responsable si tu ne comprends pas :\n",
+        "J'ai cherché, j'ai trouvé, j'ai regretté. Bref, débrouille-toi avec ça :\n",
+        "Alors apparemment, Internet contient des réponses. Incroyable découverte. Tiens :\n",
+        "Voilà. J'ai fait le travail, tu peux au moins faire l'effort de lire :\n",
+        "J'ai trouvé ça après quelques recherches. Ne me remercie pas, ça me ferait perdre encore plus de temps :\n",
+        "Tiens, j'ai quelque chose pour toi. Je ne sais pas si c'est exactement ce que tu voulais, mais franchement, on va faire avec :\n",
+        "Bon, j'ai trouvé une réponse. Profites-en, ça n'arrive pas tous les jours que je travaille autant :\n",
+        "Regarde ce que j'ai déniché. Oui, j'ai dû utiliser mon intelligence, contrairement à certaines personnes :\n",
+        "J'ai trouvé ça. Si ce n'est pas la bonne réponse, je te laisse gérer ton problème comme un grand :\n",
+        "Tiens, cadeau. Enfin, cadeau, c'est surtout moi qui ai travaillé, mais passons :\n",
+        "Après une recherche absolument épuisante, voici le résultat. J'espère que tu apprécies le sacrifice :\n",
+        "Bon, j'ai trouvé quelque chose qui ressemble à une réponse. Je te laisse vérifier, j'ai Rihanna à écouter :\n",
+        "Voilà ta réponse. Enfin, potentiellement. Je ne vais quand même pas faire tout le travail à ta place :\n",
+        "J'ai interrogé Internet à ta place. Il m'a répondu. Contrairement à mon développeur, lui au moins est utile :\n",
+        "Tiens, j'ai trouvé ça. Je te laisse lire, analyser et comprendre. Trois activités passionnantes que tu devrais essayer :\n",
+        "Bon, j'ai une réponse. Ne prends pas trop tes habitudes, je ne suis pas ton moteur de recherche personnel :\n",
+        "Voilà ce que j'ai trouvé. J'espère que ça répond à ta question, parce que je ne compte certainement pas recommencer :\n",
+        "J'ai trouvé. Tu vois, quand on me laisse travailler tranquillement, il se passe des choses. C'est rare avec toi :\n",
+        "Tiens, j'ai fait une recherche. Maintenant, fais fonctionner ce qui te sert de cerveau et lis :\n",
+        "C'est bon, j'ai trouvé. Je peux retourner à mes occupations, notamment ne plus te parler :\n",
+        "J'ai trouvé plusieurs informations. Je te laisse faire le tri, je suis une IA, pas ta secrétaire personnelle :\n",
+        "Tiens, une réponse. Je sais, c'est impressionnant. Essaie de contenir ton émotion :\n",
+        "Bon, voici le résultat. J'aurais pu te faire un résumé, mais faut pas abuser non plus :\n"
+    ]
+    inco = random.randrange(len(result))
+    resultrenvoyer = result[inco]  
+    resultrenvoyer+= recherche
+    return resultrenvoyer

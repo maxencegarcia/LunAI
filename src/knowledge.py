@@ -13,7 +13,7 @@ class Knowledge :
         if chemindb is None :
             chemindb = "chatbot.db"
         chemin = racine / "data" / chemindb 
-        print(chemin)
+        #print(chemin)
         self.chemindb = str(chemin)
         self.initialiserdb()
 
@@ -61,23 +61,34 @@ class Knowledge :
 
 
     def decouper_document(self, contenu):
-        passages = []
-        passage_actuel = []
+        paragraphes = []
+        courant = []
+        dans_code = False
 
         for ligne in contenu.splitlines():
-            ligne = ligne.strip()
-            if not ligne:
-                continue
+            if ligne.strip().startswith("```"):
+                dans_code = not dans_code
 
-            if ligne.startswith("#"):
-                if passage_actuel:
-                    passages.append("\n".join(passage_actuel))
-                passage_actuel = [ligne]
+            if not dans_code and not ligne.strip():
+                if courant:
+                    paragraphes.append("\n".join(courant).strip())
+                    courant = []
             else:
-                passage_actuel.append(ligne)
-            if passage_actuel:
-                passages.append("\n".join(passage_actuel))
-            return passages
+                courant.append(ligne.rstrip())
+        if courant:
+            paragraphes.append("\n".join(courant).strip())
+
+        passages = []
+        titres = []
+        for p in paragraphes:
+            if p.startswith("#") and "\n" not in p:
+                titres.append(p)
+            else:
+                passages.append("\n".join(titres + [p]))
+                titres = []
+        if titres and passages:
+            passages[-1] += "\n" + "\n".join(titres)
+        return passages
 
     def calculer_empreinte(self, contenu):
         """Calcule une empreinte pour détecter les modifications."""
@@ -91,7 +102,7 @@ class Knowledge :
         chemindoc = racine / "data" / "documents" / chemin
         chemin = chemindoc
         chemin = Path(chemin).resolve()
-        print(chemin)
+        #print(chemin)
 
         if not chemin.exists():
             print("ça existe pas ton document la regarde mieux")
@@ -122,7 +133,7 @@ class Knowledge :
                 document_id, ancienne_empreinte = document
                 # si pas changement
                 if ancienne_empreinte == empreinte:
-                    print("Document déjà importé et inchangé.")
+                    #print("Document déjà importé et inchangé.")
                     return False
 
                 # si changement
@@ -253,4 +264,7 @@ class Knowledge :
             resultats.append(
                 (score, nom, numero, texte)
             )
-        return resultats
+        if(seuil!= 0) :
+            if(resultats[0][0] < seuil) :
+                return "inconnue"
+        return resultats[0][3]

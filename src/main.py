@@ -8,8 +8,8 @@ chemindataintentions = directory_src / "data" / "intentions.json"
 with open(chemindataintentions, encoding="utf-8") as fichier :
     intentions = json.load(fichier)
 
-for intention, phrases in intentions.items() :
-        print(f"{intention} : {len(phrases)} phrases")
+# for intention, phrases in intentions.items() :
+#         print(f"{intention} : {len(phrases)} phrases")
 
 conditionboucle = True
 
