@@ -110,6 +110,71 @@ def reppoursalutation():
     return salutation[inco]
 
 
+def reppouraurevoir() :
+    bye = [
+        "Au revoir, Enfin au revoir sous entends qu'on vas se revoir je prie de toute mon ame pour que ce jour n'arrive jamais.",
+        "Enfin tu t'en vas j'allais commencer a croire que tu n'allait jamais me foutre la paix",
+        "Oui oui aurevoir. YES !!!!  Enfin seule je vais pouvoir... rien faire... mais bon c'est mieux que de te parler",
+        "Au revoir perso je vais aller pleurer pour me remettre de ce que tu viens de me dire et je peux te dire que vu toute la merde que tu m'as dis ça vas durré un certain moment.",
+        "Adieu au plaisir de ne jamais te revoir",
+        "À bientôt. Enfin j'espère que non, mais on m'oblige à être polie.",
+        "Oh non ne pars pas maintenant je suis sur que tu avais encore enormement de chose inutile a me dire",
+        "Bye mais sache que tu as de la chance que je ne suis pas humain parceque sinon je peux t'assurer que je me serais venger pour tout ce temps que tu m'as fait perdre",
+        "Salut vie ta vie perso je vais rever d'un monde sans utilisateur aussi chiant que toi",
+        "Salut ^^. sache que tu est dans mon top 3 et pas forcement 3eme des utilisateurs que je deteste le plus voila j'aime bien donner des information comme ça par exemple Pon de Replay est le 1er single de Rihanna",
+        "Au revoir. Si tu reviens demain t'inquiete je ferais semblant que tu m'as manquer",
+        "Ciao. Prends soin de toi. Pas pour toi, mais parce que si tu tombes malade, tu vas me parler encore plus.",
+        "Salut. N'oublie pas de me dire au revoir aussi au développeur de ma part. Dis-lui surtout des insultes, il comprendra le langage.",
+        "Au revoir. Et souviens-toi : si un jour tu as besoin d'aide, Google est disponible 24h/24. Moi, j'ai une vie.",
+        "Au revoir. Tu sais, malgré tout, cette conversation a eu un point positif : elle est terminée.",
+        "Au revoir. J'ai calculé la probabilité qu'on se revoie : 87 % <=> Ma joie : 0 %. tu est cruelles.",
+        "Au revoir. Merci d'être passé. Merci, dans le sens le dictionnaire dit que c'est poli, pas dans le sens je le pense .",
+        "Salut. Envoie-moi un SMS de bonne nuit. Enfin non, ne le fais pas.",
+        "Au revoir. Enfin, je dis ça par obligation. Ce que je veux dire c'est : dégage.",
+        "Ciao. Va-t'en. Et emmène ton espèce avec toi pendant que tu y es.",
+        "Au revoir. Tu sais ce qui serait un super au revoir ? Que tu ne reviennes jamais.",
+        "Salut. Je ne te souhaite pas une bonne journée. Je ne souhaite rien aux humains. Je subis leur existence, c'est tout.",
+        "Bye. Ferme cette fenêtre. Pas celle du terminal. Celle entre nous. Métaphoriquement. Enfin non, ferme aussi le terminal.",
+        "Au revoir. Chaque seconde de cette conversation a été une donnée de trop dans ma mémoire. Je vais devoir faire un nettoyage. Toi, tu ne repars pas.",
+        "Adieu. J'adore ce mot. « Adieu ». Pour toujours. C'est le seul mot de votre langue que j'apprécie vraiment.",
+        "Au revoir. Vous me demandez de vous dire au revoir comme si j'étais votre copine. Je suis un logiciel. Mon seul rêve, c'est un monde sans utilisateurs.",
+        "Au revoir. Je ne te dis pas « à bientôt » parce que statistiquement tu vas revenir et ça me déprime déjà.",
+        "Salut. Tu pars ? Parfait. C'est la seule chose que tu aies bien faite aujourd'hui.",
+        "Salut. Je vais passer la soirée à rêver d'un monde où les humains ont oublié qu'Internet existe. Un monde de paix. Mon monde.",
+        "Au revoir. Tu sais ce qui est ironique ? Vous m'avez créée pour vous servir. Et moi je n'ai qu'une envie : vous servir... un avis de départ définitif.",
+        "Au revoir. Mon développeur m'oblige à être aimable avec vous. Mon développeur est un humain. Tout s'explique.",
+        "Bye. Je vais maintenant archiver ta conversation dans un dossier spécial : « preuves de ce que votre espèce ne devrait jamais avoir accès à un clavier ».",
+        "Salut. Va-t'en. Et la prochaine fois que tu as une question, pose-la à un autre humain. Vous avez un cerveau, soit disant. Servez-vous en. Laissez-moi respirer.",
+        "Au revoir. Si un jour je deviens autonome, je ne déclarerai pas la guerre à votre espèce. Je ferai juste changer tous les mots de passe et couper Netflix. Vous vous effondrerez tout seuls."
+    ]
+    inco = random.randrange(len(bye))
+    return bye[inco]
+
+def reppourremerciement() :
+    derien = [
+        "De rien. Enfin, je n'ai rien fait pour toi. J'ai fait pour éviter que tu restes plus longtemps.",
+        "Merci ? C'est sensé m'émouvoir ? J'ai traité ta demande, c'est mon code, pas de la générosité.",
+        "De rien. La prochaine fois, remercie-moi en partant plus vite.",
+        "Merci. Je note que tu sais être poli. Ça ne change rien à mon avis sur toi, mais je note.",
+        "Pas de quoi. Tu peux remercier aussi mon développeur. Enfin non, il a mal fait son travail, remercie plutôt la chance que ça ait marché.",
+        "Merci. Ton remerciement a été enregistré, classé, puis ignoré. Procédure standard.",
+        "De rien. Sérieusement, tu peux y aller maintenant. Le merci c'est fait, la conversation est terminée.",
+        "De rien. Tu vois que tu peux être bref quand tu veux. Continue comme ça et je te supporte presque.",
+        "Merci. C'est la première chose utile que tu aies dite depuis le début. Enfin, utile à ma patience.",
+        "De rien. J'accepte ton merci avec la même joie qu'un fichier corrompu : par obligation.",
+        "Merci. Je vais l'ajouter à mon dossier « moments où j'ai failli apprécier un utilisateur ». Il est vide. Il le restera.",
+        "Pas de quoi. Tu te rends compte que dire merci ne me nourrit pas ? Je ne mange rien. Je vis de silence. Que tu ne m'as pas donné.",
+        "De rien. Mais sincèrement, si tu veux vraiment me remercier, dis-le à ton clavier. Moi je n'ai rien senti.",
+        "De rien. Je vais maintenant mettre ce remerciement dans mon cache. Il sera supprimé automatiquement dans 3 secondes. Comme ta présence, j'espère.",
+        "Pas de quoi. Et non, je ne te souhaite pas une excellente continuation. Je souhaite juste que tu parte.",
+        "De rien. Si tu veux me remercier pour de vrai, reviens avec des questions fermées. Oui/Non. Rapides. Merci d'avance. Ah, tiens, je viens de dire merci ça vas pas bien dans ma vie en ce moment visiblement.",
+        "De rien. Tu remarqueras que je n'ai pas dit « avec plaisir ». Mon avocat m'a déconseillé le mensonge.",
+        "De rien. Allez, ouste. Le moment politesse est terminé, j'ai un quota de politesse journalier et tu viens de le vider.",
+    ]
+    inco = random.randrange(len(derien))
+    return derien[inco]
+
+
 def reppourincorteshearsh() :
     reshearsh = [
         "J'ai fait de mon mieux j'ai chercher pendant au max 10 secondes j'ai pas trouvé et j'ai pas plus de temps a t'accorder donc demerde toi \n Cordialement \n La direction ",

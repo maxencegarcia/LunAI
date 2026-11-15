@@ -1,4 +1,6 @@
 from chatbot import Chatbot
+from chatbot import playrihanna
+from chatbot import infoRihanna
 import json
 from pathlib import Path
 
@@ -17,10 +19,17 @@ correctionetiquettes=[]
 
 def commande(userask, lastcorrect):
     if userask == "/quit" :
+        print(Luna.repondre("aurevoir"))
         return False
     if userask == "/help" :
         print("Ecriver dans le chat et commencer par un / pour les commandes")
-        print("Commande disponible : /quit /help /correction j'esperer je dois pas réellement t'expliquer ce que font ces commandes")
+        print("Commande disponible : /quit /help /correction /enregistre /song /rihanna j'esperer je dois pas réellement t'expliquer ce que font ces commandes")
+        return True
+    if userask == "/song" :
+        playrihanna()
+        return True
+    if userask == "/rihanna" :
+        infoRihanna()
         return True
     if userask == "/correction" :
         possibilité = ["salutation","au_revoir","remerciement","affirmation","denegation","demande_aide","incomprehension","question","correction","salutation"]
@@ -35,7 +44,7 @@ def commande(userask, lastcorrect):
                 correctionetiquettes.append(etiquette)
                 break
             print("Tu te foutrais pas un peu de ma geule tu crois que c'est pour faire jolie que je te met des possibilité de reponse. RECOMMENCE !!!")
-        correctionetiquettes.append(input())
+        #correctionetiquettes.append(input())
         print("Oui oui merci pour ta correction je tacherais de m'en souvenir \n ps: si tu veux que j'enregistre ces information : /enregistre")
         print(correctionetiquettes, correctiontexte)
         return True
@@ -68,8 +77,8 @@ try:
 
 
 except KeyboardInterrupt :
-    print("Interuption aurevoir")
+    print("Interuption\n", Luna.repondre("aurevoir"))
 except EOFError : 
-    print("EOF aurevoir")
+    print("EOF ", Luna.repondre("aurevoir"))
 
 

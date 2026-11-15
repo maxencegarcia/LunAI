@@ -8,7 +8,9 @@ numpy==2.5.4
 packaging==26.3
 pluggy==1.7.0
 pydf==12
+pygame==2.6.1
 Pygments==2.21.0
+pypdf==6.21.2
 pytest==9.1.1
 rich==15.0.0
 scikit-learn==1.9.1
